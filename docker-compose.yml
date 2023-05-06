@@ -1,0 +1,11 @@
+version: 2.17.3
+services:
+  databases:
+    image: mysql
+    ports:
+      - "3306:3306"
+    entrypoint:
+      - MSQL_ROOT_PASSWORD=password
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=demodb
